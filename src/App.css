@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: "Quicksand", sans-serif;
+   */
+   /* font-family: Noto Sans,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; */
+   /* font-family:ui-monospace,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; */
+  font-family: 'Noto Sans', sans-serif;;
+   /* font-size:1em */
+}
+
+.Dropdown-root {
+  width: 100%;
+}
+
+.Dropdown-control {
+  box-shadow: none !important;
+  border: none !important;
+  border: 1px solid rgb(201, 201, 201) !important;
+  border-radius: 10px !important;
+  margin: 0.1rem auto !important;
+  padding: 0.4rem 0.6rem !important;
+  font-size: 1rem !important;
+  /* border-bottom: 1px solid rgb(201, 201, 201) !important; */
+  /* padding: 0.3rem !important;
+  border-radius: 0 !important; */
+}
+
+.dropdown-container {
+  border: none !important;
+  border-bottom: 1px solid rgb(201, 201, 201) !important;
+  --rmsc-main: rgba(0, 0, 0, 0) !important;
+  border-radius: 0 !important;
+}
+
+input {
+  width: 100%;
+  /* border: none; */
+  outline: none;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 10px;
+
+  /* border-bottom: 1px solid rgb(201, 201, 201); */
+  margin: 0.3rem auto;
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+}
+
+.button-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  background-color: #80b9e8;
+  box-shadow: -5px -5px 20px #fff,  5px 5px 20px #b0b3bd;
+  
+  /* box-shadow: 3px -3px 10px #fff,  3px 3px 10px #b0b3bd; */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  margin: auto;
+  padding: 0.4rem 0;
+  width: 200px;
+  /* width: 200px; */
+  
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.button-1:hover {
+  background-color: #488ec7;
+}
+
+
+.button-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(63, 62, 62);
+  background-color: white;
+  border: 1px solid #80b9e8;
+  border-radius: 10px;
+  cursor: pointer;
+
+  margin: auto;
+  padding: 0.4rem 0;
+  width: 200px;
+  /* width: 200px; */
+  
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.button-2:hover {
+  background-color: #e1e2e2;
+}
+
+.backbutton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75px;
+  padding: 0.3rem 0.8rem;
+  margin-left: 3rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #80b9e8;
+  color: white;
+  cursor: pointer;
+}
+
+.rmsc {
+  border-radius: 0 !important;
+  width: 100% !important;
+}
+
+.rmsc .item-renderer input {
+  width: max-content;
+}
+
+.my-masonry-grid {
+  max-width: 1420px;
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -15px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 15px; /* gutter size */
+  width: 50% !important;
+  background-clip: padding-box;
+}
+@media screen and (max-width: 880px) {
+  html{
+    -webkit-text-size-adjust: none;
+  }
+}
+@media screen and (max-width: 430px) {
+  html{
+    -webkit-text-size-adjust: none;
+  }
+  .my-masonry-grid_column {
+    padding-left: 0;
+  }
+  .button-1 {
+    width: 100%;
+  }
+  .backbutton{
+    margin-left: 1rem;
+  }
+}
